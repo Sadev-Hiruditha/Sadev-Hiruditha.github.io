@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Sadev Abeykoon – BICT (Hons) Undergraduate at Rajarata University. Seeking Data Science, AI, Business Analyst, and IoT Internships in Sri Lanka." />
+  <title>Sadev Abeykoon | Portfolio</title>
+
+  <!-- Open Graph / Social Media Tags -->
+  <meta property="og:title" content="Sadev Abeykoon | Portfolio" />
+  <meta property="og:description"
+    content="BICT (Hons) Undergraduate at Rajarata University. Seeking Data Science, AI, Business Analyst, and IoT Internships in Sri Lanka. Check out my projects!" />
+  <meta property="og:image" content="images/avatar.jpg" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-inner">
+      <span class="loader-text">Loading<span class="dots">...</span></span>
+      <div class="loader-bar">
+        <div class="loader-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-brand">
+      <span class="brand-bracket">&lt;</span>Sadev<span class="brand-dot">.</span>dev<span
+        class="brand-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-dropdown">
+      <button class="btn-nav"><i class="fa fa-download"></i> Resume <i class="fa fa-chevron-down"
+          style="font-size:0.8em;margin-left:4px"></i></button>
+      <div class="dropdown-menu">
+        <a href="cv/aiml_datascience/Sadev_Abeykoon_Intern-AI_Engineering_Intern.pdf" target="_blank"><i
+            class="fa fa-brain"></i> AI/ML Engineer</a>
+        <a href="cv/BA/Sadev_Abeykoon_Intern-Business_Analyst.pdf" target="_blank"><i class="fa fa-chart-line"></i>
+          Business Analyst</a>
+        <a href="cv/iot_embedded_engineer/SADEV_ABEYKOON_CV-IoT_Intern.pdf" target="_blank"><i
+            class="fa fa-microchip"></i> IoT / Embedded</a>
+      </div>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge"><span class="pulse-dot"></span> Open to Internships – Sri Lanka & Remote</div>
+      <h1 class="hero-title">Hi, I'm <span class="gradient-text">Sadev Abeykoon</span></h1>
+      <div class="hero-subtitle">
+        <span id="typed-text"></span><span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-desc">Final-year BICT (Hons) undergraduate at Rajarata University. My passion lies at the
+        intersection of Data Analytics, AI, Business Analysis, and IoT, where I build intelligent systems to solve
+        real-world problems.</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary"><i class="fa fa-rocket"></i> View Projects</a>
+        <a href="#contact" class="btn-outline"><i class="fa fa-envelope"></i> Let's Connect</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num" data-target="7">0</span><span class="stat-label">Projects</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <div style="display: block; line-height: 1.2;">
+            <span class="stat-num" data-target="10" style="display: inline;">0</span><span
+              style="font-size:2rem;font-weight:800;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text; display: inline;">+</span>
+          </div>
+          <span class="stat-label">Certifications</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-target="3.48">0</span><span class="stat-label">Current
+            GPA</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="orbit-ring ring-1"></div>
+      <div class="orbit-ring ring-2"></div>
+      <div class="orbit-ring ring-3"></div>
+      <div class="avatar-wrap">
+        <img src="images/avatar.jpg" alt="Sadev Abeykoon" class="avatar-img"
+          onerror="this.style.display='none';document.getElementById('avatarFallback').style.display='flex'" />
+        <div class="avatar-fallback" id="avatarFallback"><i class="fa fa-user"></i></div>
+      </div>
+      <div class="floating-badge fb1"><i class="fa-brands fa-python"></i> Python</div>
+      <div class="floating-badge fb2"><i class="fa fa-brain"></i> ML / AI</div>
+      <div class="floating-badge fb3"><i class="fa fa-chart-bar"></i> Data Science</div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01. About</span>
+        <h2 class="section-title">Who Am I?</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a <strong>final-year BICT (Hons) undergraduate</strong> at Rajarata University of Sri Lanka with a
+            strong passion for Data Analytics and Artificial Intelligence. I have a solid foundation in machine
+            learning, data processing, and extracting actionable insights from complex datasets.</p>
+          <p>I have proven experience handling complex multimodal datasets and developing NLP pipelines, including
+            ongoing research on Automotive Engine Fault Diagnosis using audio and vibration sensor data.</p>
+          <p>I'm actively seeking a <strong>Data Science or AI internship</strong>, while also welcoming opportunities
+            in <strong>Business Analysis</strong> and <strong>IoT</strong>. My goal is to leverage my versatile
+            programming and analytical skills to solve real-world, cutting-edge problems.</p>
+          <div class="about-highlights">
+            <div class="highlight-item"><i class="fa fa-graduation-cap"></i><span>BICT (Hons) ICT – GPA 3.48 / 4.0 |
+                Rajarata University</span></div>
+            <div class="highlight-item"><i class="fa fa-location-dot"></i><span>Colombo, Sri Lanka – Open to Remote /
+                Hybrid</span></div>
+            <div class="highlight-item"><i class="fa fa-briefcase"></i><span>1.5 yrs Industry Experience – OREL IT (PVT)
+                Ltd</span></div>
+            <div class="highlight-item"><i class="fa fa-flask"></i><span>Active Researcher – Automotive Engine Fault
+                Diagnosis (CNN + Raspberry Pi)</span></div>
+          </div>
+        </div>
+        <div class="about-card-wrap">
+          <div class="glass-card about-quick">
+            <h3>Quick Info</h3>
+            <ul>
+              <li><i class="fa fa-calendar"></i> Final Year Undergraduate (2022–Present)</li>
+              <li><i class="fa fa-briefcase"></i> Seeking DS & AI Internships</li>
+              <li><i class="fa fa-phone"></i> +94 774 551 368</li>
+              <li><i class="fa fa-envelope"></i> sadevonline@gmail.com</li>
+              <li><i class="fa fa-location-dot"></i> Colombo, Sri Lanka</li>
+            </ul>
+            <div class="quick-socials">
+              <a href="https://linkedin.com/in/sadev-hiruditha-rusl" target="_blank" class="btn-primary btn-sm"><i
+                  class="fa-brands fa-linkedin"></i> LinkedIn</a>
+              <a href="https://github.com/Sadev-Hiruditha" target="_blank" class="btn-outline btn-sm"><i
+                  class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="skills section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02. Skills</span>
+        <h2 class="section-title">Tech Stack</h2>
+      </div>
+      <div class="skills-tabs">
+        <button class="tab-btn active" data-tab="ai">Data Science &amp; AI</button>
+        <button class="tab-btn" data-tab="data">Data Analytics &amp; BI</button>
+        <button class="tab-btn" data-tab="prog">Programming</button>
+        <button class="tab-btn" data-tab="tools">Tools &amp; Platforms</button>
+        <button class="tab-btn" data-tab="hw">Hardware</button>
+        <button class="tab-btn" data-tab="proto">Protocols</button>
+      </div>
+      <div class="skills-panels">
+
+        <!-- Data Science & AI -->
+        <div class="skills-panel active" id="tab-ai">
+          <div class="skill-grid">
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fa fa-brain"></i></div><span>Machine Learning</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fa fa-network-wired"></i></div><span>Deep Learning</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fa fa-fire"></i></div><span>TensorFlow / TF Lite / Keras</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fa fa-eye"></i></div><span>CNN / OpenCV</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fa fa-car"></i></div><span>YOLOv8n</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fa fa-comments"></i></div><span>NLP</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fa fa-magnifying-glass-chart"></i></div><span>scikit-learn</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fa fa-wave-square"></i></div><span>FFT / STFT</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Data Analytics & BI -->
+        <div class="skills-panel" id="tab-data">
+          <div class="skill-grid">
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fa fa-database"></i></div><span>SQL</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fa fa-chart-bar"></i></div><span>Power BI</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fa fa-table"></i></div><span>Pandas / NumPy</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fa fa-file-excel"></i></div><span>Microsoft Excel</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fa fa-chart-line"></i></div><span>MS Access</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Programming Languages -->
+        <div class="skills-panel" id="tab-prog">
+          <div class="skill-grid">
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fa-brands fa-python"></i></div><span>Python</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fa fa-r"></i></div><span>R</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fa fa-superscript"></i></div><span>MATLAB</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fa fa-code"></i></div><span>PHP</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fa-brands fa-js"></i></div><span>JavaScript</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fa fa-c"></i></div><span>C / C++</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools & Platforms -->
+        <div class="skills-panel" id="tab-tools">
+          <div class="skill-grid">
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fa-brands fa-git-alt"></i></div><span>Git / GitHub</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fa fa-book-open"></i></div><span>Jupyter / Google Colab</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fa fa-fire"></i></div><span>Firebase</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fa fa-database"></i></div><span>MySQL</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fa fa-microchip"></i></div><span>Arduino IDE</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fa fa-tag"></i></div><span>CVAT (Annotation)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Microcontrollers & Hardware -->
+        <div class="skills-panel" id="tab-hw">
+          <div class="skill-grid">
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fa fa-microchip"></i></div><span>ESP32</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fa fa-microchip"></i></div><span>Arduino Uno</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fa fa-server"></i></div><span>Raspberry Pi 4</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fa fa-microphone"></i></div><span>INMP441 (I2S Mic)</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fa fa-arrows-to-dot"></i></div><span>MPU-6050 (IMU)</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fa fa-satellite-dish"></i></div><span>IR Sensor / HC-SR04</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Protocols & Firmware -->
+        <div class="skills-panel" id="tab-proto">
+          <div class="skill-grid">
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fa fa-plug"></i></div><span>I2C</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fa fa-wave-square"></i></div><span>I2S</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fa fa-arrows-left-right"></i></div><span>UART</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fa fa-rotate"></i></div><span>SPI</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fa fa-wifi"></i></div><span>Wi-Fi</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fa fa-tower-broadcast"></i></div><span>MQTT</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03. Projects</span>
+        <h2 class="section-title">Featured Work</h2>
+      </div>
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ml">ML / AI</button>
+        <button class="filter-btn" data-filter="web">Web Dev</button>
+        <button class="filter-btn" data-filter="nlp">NLP</button>
+        <button class="filter-btn" data-filter="iot">IoT</button>
+      </div>
+      <div class="projects-grid" id="projectsGrid">
+
+        <div class="project-card featured" data-cat="ml">
+          <div class="project-img" style="background:linear-gradient(135deg,#6366f1,#8b5cf6)">
+            <i class="fa fa-car project-icon"></i>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">Keras</span><span
+                class="tag">TF Lite</span><span class="tag">CNN</span><span class="tag">Raspberry Pi 4</span>
+            </div>
+            <h3>Multimodal Edge AI | Automotive Engine Fault Diagnosis</h3>
+            <p>An ongoing research initiative aimed at developing an intelligent diagnostic system for identifying
+              mechanical failures in Toyota 1NZ-FE engines. The architecture involves a dual-stream CNN designed to
+              synchronize and process multimodal data arrays, specifically audio and vibration signals. The project
+              focuses on optimizing models for real-time execution on Raspberry Pi 4 hardware to achieve
+              high-performance edge inference.</p>
+          </div>
+          <div class="featured-badge"><i class="fa fa-flask"></i> Research</div>
+        </div>
+
+        <div class="project-card" data-cat="ml">
+          <div class="project-img"
+            style="background-image:url('images/AIChesscoach.png');background-size:cover;background-position:center;">
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">JavaScript</span><span class="tag">CSS3</span><span class="tag">Python</span><span
+                class="tag">FastAPI</span><span class="tag">Stockfish</span><span class="tag">Gemini API</span>
+            </div>
+            <h3>AI Chess Coach | Full-Stack AI Chess Analyzer</h3>
+            <p>Engineered a modern, dark-mode chess dashboard that combines a clean interactive UI with
+              professional-grade engine analysis. Built a Python and FastAPI backend that passes board states (FEN) to
+              Stockfish 16. Used prompt engineering with the Google Gemini API to translate raw data into natural
+              language coaching advice, flawlessly handling special moves and illegal moves.</p>
+            <div class="project-links">
+              <a href="https://github.com/Sadev-Hiruditha/ChessBot.git" target="_blank" class="btn-ghost"><i
+                  class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="nlp">
+          <div class="project-img"
+            style="background-image:url('images/voiceasis01.png');background-size:cover;background-position:center;">
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">Python</span><span class="tag">spaCy</span><span class="tag">NLP</span><span
+                class="tag">API Integration</span>
+            </div>
+            <h3>Python Voice Assistant | NLP & API Integration</h3>
+            <p>Developed a functional voice assistant designed to parse spoken or text commands and execute specific
+              user intents. Built a natural language processing pipeline using the spaCy library to categorize intents
+              and extract relevant entities from user input. Engineered robust data pipelines that query external APIs
+              for real-time information with automated error logging.</p>
+            <div class="project-links">
+              <a href="https://github.com/Sadev-Hiruditha/voice_Assistant.git" target="_blank" class="btn-ghost"><i
+                  class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="iot">
+          <div class="project-img"
+            style="background-image:url('images/smartparking_ui.jfif');background-size:cover;background-position:center;">
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">Firebase</span><span
+                class="tag">ESP32</span><span class="tag">HTML/CSS/JS</span>
+            </div>
+            <h3>Smart Parking System | IoT & Web Integration</h3>
+            <p>An end-to-end smart parking solution enabling users to track slot availability and book spaces in
+              real-time through a web interface. The project involved managing robust data synchronization between
+              physical hardware and the cloud, utilizing Firebase and MySQL for instant updates.</p>
+            <div class="project-links">
+              <a href="https://github.com/theekshana-thennakoon/Online-vehicle-parking-system.git" target="_blank"
+                class="btn-ghost"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="ml">
+          <div class="project-img" style="background:linear-gradient(135deg,#10b981,#059669)">
+            <i class="fa fa-camera project-icon"></i>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">Python</span><span class="tag">YOLOv8</span><span class="tag">Firebase</span><span
+                class="tag">Computer Vision</span>
+            </div>
+            <h3>Smart Parking System (YOLOv8 + Firebase)</h3>
+            <p>A Smart Parking System that detects slot availability using YOLOv8 (computer vision) and updates results
+              to Firebase Realtime Database. It features manual parking slot mapping, automatic vehicle detection,
+              free/occupied slot monitoring, and real-time status updates.</p>
+            <div class="project-links">
+              <a href="https://github.com/Sadev-Hiruditha/smart_parking_system.git" target="_blank" class="btn-ghost"><i
+                  class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="iot">
+          <div class="project-img"
+            style="background-image:url('images/autoclean01.jpeg');background-size:cover;background-position:center;">
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">Arduino</span><span class="tag">Ultrasonic Sensors</span><span class="tag">Motor
+                Drivers</span><span class="tag">C++</span>
+            </div>
+            <h3>AutoClean | Autonomous Floor Cleaning Robot</h3>
+            <p>An autonomous mobile robot engineered for efficient floor cleaning in indoor environments. The primary
+              engineering focus was the implementation of intelligent obstacle avoidance algorithms that allow the robot
+              to map surroundings and maneuver safely, demonstrating successful integration of hardware and real-time
+              sensors.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="web">
+          <div class="project-img"
+            style="background-image:url('images/scmirage01.jpg');background-size:cover;background-position:center;">
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span
+                class="tag">PHP</span><span class="tag">MySQL</span>
+            </div>
+            <h3>Secret Mirage | Hotel Reservation System</h3>
+            <p>A full-featured reservation platform for the hospitality industry, designed with a focus on seamless user
+              experience. The architecture includes a relational database to manage room availability and customer data,
+              with a custom module to handle complex date/time selection logic.</p>
+            <div class="project-links">
+              <a href="https://github.com/Sadev-Hiruditha/Hotel-secret-mirage.git" target="_blank" class="btn-ghost"><i
+                  class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION & CERTS -->
+  <section id="education" class="education section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04. Education & Experience</span>
+        <h2 class="section-title">Academic Journey</h2>
+      </div>
+      <div class="edu-grid">
+        <div class="timeline">
+          <h3 class="sub-title"><i class="fa fa-graduation-cap"></i> Education & Experience</h3>
+
+          <div class="timeline-item">
+            <div class="tl-dot active"></div>
+            <div class="tl-content">
+              <span class="tl-date">2022 – Present</span>
+              <h4>BICT (Hons) in Information Communication Technology</h4>
+              <p>Rajarata University of Sri Lanka</p>
+              <p style="font-size:.78rem;color:var(--text3);margin-top:4px">Core: DB Systems, Comp. Statistics, DSA,
+                Networking, OOP<br>Advanced: Data Science, AI, IoT</p>
+              <span class="tl-badge highlight">GPA: 3.48 / 4.0 &nbsp;|&nbsp; Active</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <span class="tl-date">Feb 2021 – Oct 2022</span>
+              <h4>Associate Image Processor</h4>
+              <p>OREL IT (PVT) Ltd · Colombo, Sri Lanka</p>
+              <p style="font-size:.78rem;color:var(--text3);margin-top:4px">98%+ accuracy in data annotation using CVAT.
+                Built structured ML training datasets. Contributed to computer vision pipelines.</p>
+              <span class="tl-badge">Industry Experience</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <span class="tl-date">2020</span>
+              <h4>G.C.E. Advanced Level – Engineering Technology</h4>
+              <p>Mahinda Rajapaksha College – Homagama</p>
+              <span class="tl-badge">1B, 2Cs</span>
+            </div>
+          </div>
+
+          <h3 class="sub-title" style="margin-top:32px"><i class="fa fa-star"></i> Extra-Curricular</h3>
+          <div class="extra-list">
+            <div class="extra-item"><i class="fa fa-chalkboard-teacher"></i> Project Mentor – EXTRU 2025 Exhibition
+              (ATIT, RUSL)</div>
+            <div class="extra-item"><i class="fa fa-users"></i> Member – ATIT Rajarata, Faculty of Technology</div>
+            <div class="extra-item"><i class="fa fa-chess"></i> Editor – PEDONE Chess Society, Faculty of Technology
+            </div>
+            <div class="extra-item"><i class="fa fa-chess-king"></i> Member – Faculty Chess Team, RUSL</div>
+          </div>
+        </div>
+
+        <div class="certs">
+          <h3 class="sub-title"><i class="fa fa-certificate"></i> Certifications</h3>
+
+          <div class="cert-card">
+            <div class="cert-logo coursera"><i class="fa-brands fa-linkedin-in"></i></div>
+            <div class="cert-info">
+              <strong>Machine Learning with scikit-learn</strong>
+              <span>LinkedIn – Apr 2026</span>
+            </div>
+            <a href="https://www.linkedin.com/learning/certificates/a8e2b536ecea0480ba6f08abd6f5088bc2bd19367567bce53660a55204948e83"
+              target="_blank" class="cert-link"><i class="fa fa-arrow-up-right-from-square"></i></a>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-logo coursera"><i class="fa-brands fa-linkedin-in"></i></div>
+            <div class="cert-info">
+              <strong>Power BI Essential Training (CPE)</strong>
+              <span>LinkedIn – Apr 2026</span>
+            </div>
+            <a href="https://www.linkedin.com/learning/certificates/c104d09fe76f09b7573c53bfee29749348bc000403cb65ef1a64e300d1a2d352"
+              target="_blank" class="cert-link"><i class="fa fa-arrow-up-right-from-square"></i></a>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-logo coursera"><i class="fa-brands fa-linkedin-in"></i></div>
+            <div class="cert-info">
+              <strong>Automate Your Work with n8n</strong>
+              <span>LinkedIn – Apr 2026</span>
+            </div>
+            <a href="https://www.linkedin.com/learning/certificates/8cd391e9eaa8b2481c473e288ace2f1bdc3bddf64cbc4f57b9dd43f42bd92d4b"
+              target="_blank" class="cert-link"><i class="fa fa-arrow-up-right-from-square"></i></a>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-logo kaggle"><i class="fa-solid fa-k"></i></div>
+            <div class="cert-info">
+              <strong>Intro to Machine Learning</strong>
+              <span>Kaggle</span>
+            </div>
+            <a href="https://www.kaggle.com/learn/certification/sadevhiruditha/intro-to-machine-learning"
+              target="_blank" class="cert-link"><i class="fa fa-arrow-up-right-from-square"></i></a>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-logo coursera"><i class="fa-brands fa-linkedin-in"></i></div>
+            <div class="cert-info">
+              <strong>Introduction to Artificial Intelligence</strong>
+              <span>LinkedIn Learning – Jun 2025</span>
+            </div>
+            <a href="https://www.linkedin.com/learning/certificates/fad6a95e55812a04737192a367e7d91635a83206cbc8c8e4597e3f1f2707f88a"
+              target="_blank" class="cert-link"><i class="fa fa-arrow-up-right-from-square"></i></a>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-logo coursera"><i class="fa-brands fa-linkedin-in"></i></div>
+            <div class="cert-info">
+              <strong>Build REST APIs with FastAPI</strong>
+              <span>LinkedIn – Apr 2026</span>
+            </div>
+            <a href="https://www.linkedin.com/learning/certificates/1b4f87e465ae9afbf7ddad381b3bc7da7eeaa04648cd0fdf753a38e8fe861f77"
+              target="_blank" class="cert-link"><i class="fa fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">05. Contact</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-sub">Open to Data Science, AI, Business Analyst, and IoT internship opportunities in Sri Lanka
+          and remote. Let's
+          build something amazing!</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa fa-envelope"></i></div>
+            <div><strong>Email</strong><span>sadevonline@gmail.com</span></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa fa-phone"></i></div>
+            <div><strong>Phone</strong><span>+94 774 551 368</span></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa fa-location-dot"></i></div>
+            <div><strong>Location</strong><span>Colombo, Sri Lanka</span></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa fa-clock"></i></div>
+            <div><strong>Availability</strong><span>Open for Internships (Full-time)</span></div>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/Sadev-Hiruditha" target="_blank" class="social-btn" title="GitHub"><i
+                class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/sadev-hiruditha-rusl" target="_blank" class="social-btn"
+              title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:sadevonline@gmail.com" class="social-btn" title="Email"><i class="fa fa-envelope"></i></a>
+            <a href="tel:+94774551368" class="social-btn" title="Call"><i class="fa fa-phone"></i></a>
+          </div>
+        </div>
+        <div class="contact-form-wrap">
+          <form id="contactForm" action="https://formspree.io/f/mwvynvlq" method="POST" class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="recruiter@company.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Internship Opportunity – Data Science"
+                required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about the role or project..."
+                required></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full" id="submitBtn">
+              <i class="fa fa-paper-plane"></i> Send Message
+            </button>
+            <div id="formStatus" class="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>Designed &amp; Built by <span class="gradient-text">Sadev Abeykoon</span> <i class="fa fa-heart"
+        style="color:#f43f5e"></i></p>
+    <p class="footer-sub">BICT (Hons) Undergraduate · Rajarata University of Sri Lanka · © 2026</p>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top"><i class="fa fa-arrow-up"></i></button>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
